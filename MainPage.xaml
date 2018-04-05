@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="prjExamen1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:prjExamen1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Left" Margin="72,56,0,0" Text="Capital del Ecuador:" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <RadioButton x:Name="QuitoRadio" Content="Quito" HorizontalAlignment="Left" Margin="80,92,0,0" VerticalAlignment="Top" GroupName="Capital" Checked="QuitoRadio_Checked" Unchecked="QuitoRadio_Unchecked"/>
+        <RadioButton x:Name="CuencaRadio" Content="Cuenca" HorizontalAlignment="Left" Margin="80,129,0,0" VerticalAlignment="Top" GroupName="Capital"/>
+        <TextBlock HorizontalAlignment="Left" Margin="80,187,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CSharpBox" Content="C#" HorizontalAlignment="Left" Margin="80,230,0,0" VerticalAlignment="Top" Checked="CSharpBox_Checked" Unchecked="CSharpBox_Unchecked"/>
+        <CheckBox x:Name="JavaBox" Content="Java" HorizontalAlignment="Left" Margin="200,230,0,0" VerticalAlignment="Top" Checked="JavaBox_Checked" Unchecked="JavaBox_Unchecked"/>
+        <CheckBox x:Name="FSharpBox" Content="F#" HorizontalAlignment="Left" Margin="325,230,0,0" VerticalAlignment="Top"/>
+        <Button Content="Adivinar" HorizontalAlignment="Left" Margin="500,281,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+    </Grid>
+</Page>
